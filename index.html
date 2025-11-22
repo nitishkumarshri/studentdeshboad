@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="hi">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <h1>Student Dashboard</h1>
+    </header>
+    <main>
+        <section id="notes">
+            <h2>मेरे नोट्स</h2>
+            <div class="input-container">
+                <textarea id="note-input" placeholder="यहां अपना नोट लिखें..."></textarea>
+                <button id="add-note">नोट जोड़ें</button>
+            </div>
+            <ul id="notes-list"></ul>
+        </section>
+        <section id="assignments">
+            <h2>मेरे असाइनमेंट</h2>
+            <div class="input-container">
+                <input type="text" id="assignment-input" placeholder="असाइनमेंट का नाम">
+                <input type="date" id="assignment-due-date">
+                <input type="file" id="assignment-file" accept=".pdf,.doc,.docx,.txt,.jpg,.jpeg,.png">
+                <button id="add-assignment">असाइनमेंट जोड़ें</button>
+            </div>
+            <ul id="assignments-list"></ul>
+            <div id="uploaded-files">
+                <h3>अपलोड की गई फाइलें</h3>
+                <ul id="files-list"></ul>
+            </div>
+        </section>
+        <section id="reminders">
+            <h2>मेरे रिमाइंडर</h2>
+            <div class="input-container">
+                <input type="text" id="reminder-input" placeholder="रिमाइंडर टेक्स्ट">
+                <input type="datetime-local" id="reminder-time">
+                <button id="add-reminder">रिमाइंडर सेट करें</button>
+            </div>
+            <ul id="reminders-list"></ul>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 Student Dashboard. All rights reserved.</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+
+</html>
